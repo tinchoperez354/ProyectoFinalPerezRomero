@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Auriculares Wireless",
+    "price": 4999,
+    "currency": "ARS",
+    "stock": 10,
+    "description": "Auriculares Bluetooth con cancelación de ruido."
+  },
+  {
+    "id": 2,
+    "name": "Smartwatch Fit",
+    "price": 7999,
+    "currency": "ARS",
+    "stock": 7,
+    "description": "Monitor de actividad, 7 días de batería."
+  },
+  {
+    "id": 3,
+    "name": "Cargador USB-C 65W",
+    "price": 2999,
+    "currency": "ARS",
+    "stock": 20,
+    "description": "Carga rápida para notebooks y celulares."
+  },
+  {
+    "id": 4,
+    "name": "Mochila Urban",
+    "price": 6499,
+    "currency": "ARS",
+    "stock": 5,
+    "description": "Mochila impermeable con puerto USB."
+  }
+]

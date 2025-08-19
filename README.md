@@ -19,12 +19,5 @@ Pequeño simulador de Ecommerce que cumple las consignas solicitadas:
 1. Descomprimir `ProyectoFinalPerezRomero.zip`
 2. Abrir `index.html` en el navegador (no requiere servidor, pero algunos navegadores bloquean fetch de archivos locales. Si hay problemas, servir con un servidor simple: `python -m http.server 8000` y abrir `http://localhost:8000/`).
 
-## Notas sobre criterios de evaluación
-- Funcionalidad: flujo entrada-procesamiento-salida implementado (agregar al carrito -> procesar order -> generar resumen y actualizar stock simulado).
-- Interactividad: entradas por inputs y botones, salidas actualizadas dinámicamente en HTML.
-- Escalabilidad: funciones parametrizadas, uso de objetos y arrays, recorrido con `forEach`/`reduce`.
-- Integridad: JS en archivo `app.js`, JSON asíncrono `products.json` usando fetch.
-- Legibilidad: nombres de variables y funciones significativos, comentarios, estructura.
-
 ## Autor
 Martin Perez Romero (proyecto de entrega)

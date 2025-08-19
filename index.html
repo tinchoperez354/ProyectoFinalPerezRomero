@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ProyectoFinalPerezRomero - Simulador Ecommerce</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- SweetAlert2 para reemplazar alert/confirm/prompt -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Tiendita - Simulador Ecommerce</h1>
+    <div class="cart-summary" id="cart-summary">Carrito: 0 items - $0</div>
+  </header>
+  <main class="container">
+    <section id="product-list" class="product-list" aria-live="polite">
+      <!-- Productos generados desde JS -->
+    </section>
+
+    <aside class="checkout" id="checkout-panel">
+      <h2>Carrito</h2>
+      <div id="cart-items"></div>
+      <div class="totals">
+        <div>Subtotal: <span id="subtotal">$0</span></div>
+        <div>Envio: <span id="shipping">$0</span></div>
+        <div class="total">Total: <span id="total">$0</span></div>
+      </div>
+      <button id="checkout-btn" class="btn" disabled>Finalizar compra</button>
+      <button id="clear-cart" class="btn secondary">Vaciar carrito</button>
+    </aside>
+
+    <section id="actions" class="actions">
+      <h3>Acciones rápidas</h3>
+      <button id="preload-btn" class="btn">Precargar datos (form)</button>
+      <button id="demo-purchase" class="btn secondary">Simular compra rápida</button>
+    </section>
+  </main>
+
+  <!-- Form modal template (hidden, opened via SweetAlert2) -->
+  <template id="checkout-form-template">
+    <form id="checkout-form" class="checkout-form">
+      <label>Nombre
+        <input name="name" required />
+      </label>
+      <label>Email
+        <input name="email" type="email" required />
+      </label>
+      <label>DNI
+        <input name="dni" required />
+      </label>
+      <label>Dirección
+        <input name="address" required />
+      </label>
+      <label>Forma de pago
+        <select name="payment" required>
+          <option value="">Seleccionar</option>
+          <option value="mercado">Mercado Pago</option>
+          <option value="transfer">Transferencia</option>
+          <option value="efectivo">Efectivo</option>
+        </select>
+      </label>
+    </form>
+  </template>
+
+  <footer class="site-footer">
+    <small>ProyectoFinalPerezRomero - Simulador Ecommerce - Entrega final</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
